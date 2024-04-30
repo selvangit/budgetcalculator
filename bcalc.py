@@ -16,7 +16,7 @@ todays_date = st.date_input("Today's Date:")
 # --- Cost Input Functions ---
 def get_costs(cost_type):
     st.subheader(f"{cost_type} Costs")
-    hourly_rate = st.number_input(f"Hourly {cost_type} Developer Rate ($)", value=96 if cost_type == "Onsite" else 35)
+    hourly_rate = st.number_input(f"Hourly {cost_type} Developer Rate ($)", value=100 if cost_type == "Onsite" else 40)
     overhead = st.number_input(f"{cost_type} Overhead Costs", value=0.0)
     return [hourly_rate, overhead]
 
